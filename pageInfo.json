@@ -1,0 +1,53 @@
+{
+	"data": [
+		{
+			"pk_appregister": "1009Z0100000000WWBKQ",
+			"mountid": "app3",
+			"code": "0102",
+			"name": "审批销售订单",
+			"module": "so",
+			"width": "1",
+			"height": "1",
+			"target_path": "http://baidu.com",
+			"apptype": "1",
+			"dr": 0,
+			"status": 0,
+			"m_isDirty": false,
+			"path": "",
+			"img_src": "http://op3cmr9ix.bkt.clouddn.com/head/head.jpg"
+		},
+		{
+			"pk_appregister": "1009Z0100000000WWBKQ",
+			"mountid": "app4",
+			"code": "0102",
+			"name": "供应链",
+			"module": "so",
+			"width": "1",
+			"height": "1",
+			"target_path": "http://sina.com",
+			"apptype": "1",
+			"dr": 0,
+			"status": 0,
+			"m_isDirty": false,
+			"path": "",
+			"img_src": "https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=862989812,157186986&fm=58&bpow=0&bpoh=0"
+		},
+		{
+			"pk_appregister": "1009Z0100000000WWBKQ",
+			"mountid": "app666",
+			"code": "0102",
+			"name": "新增销售订单",
+			"module": "so",
+			"width": "1",
+			"height": "1",
+			"target_path": "http://weibo.com",
+			"apptype": "1",
+			"dr": 0,
+			"status": 0,
+			"m_isDirty": false,
+			"path": "",
+			"img_src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K"
+		}
+	],
+	"success": true
+}
