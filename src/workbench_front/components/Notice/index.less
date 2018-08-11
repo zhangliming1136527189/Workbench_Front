@@ -1,0 +1,22 @@
+.nc-notification {
+    border: 1px solid #ffffff;
+    box-shadow: 0px 3px 12px 0px rgba(74, 81, 93, 0.25);
+    &.success {
+        border-color: rgba(172, 235, 140, 1);
+        .ant-notification-notice-message {
+            color: #67c23a;
+        }
+    }
+    &.warning {
+        border-color: rgba(255, 195, 122, 1);
+        .ant-notification-notice-message {
+            color: #ff8b00;
+        }
+    }
+    &.error {
+        border-color: rgba(255, 172, 172, 1);
+        .ant-notification-notice-message {
+            color: #f56c6c;
+        }
+    }
+}

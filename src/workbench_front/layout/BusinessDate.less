@@ -1,0 +1,73 @@
+.workbench-ExtraFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .btn {
+        color: #007ace;
+        cursor: pointer;
+    }
+}
+.nc-workbench-businessdate-dropdown {
+    .ant-calendar-selected-day {
+        .ant-calendar-date {
+            background: #e14c46;
+            color: #ffffff;
+        }
+    }
+    .ant-calendar-today {
+        .ant-calendar-date {
+            border-color: #e14c46;
+            color: #e14c46;
+        }
+    }
+    .ant-calendar-today.ant-calendar-selected-day {
+        .ant-calendar-date {
+            border-color: #e14c46;
+            color: #ffffff;
+            &:hover {
+                background: #fef1f1;
+                color: #e14c46;
+            }
+        }
+    }
+    .ant-calendar-date {
+        &:hover {
+            background: #fef1f1;
+            color: #e14c46;
+        }
+        &:active {
+            background: #fef1f1;
+            color: #e14c46;
+        }
+        &:focus {
+            outline-color: #fef1f1;
+        }
+    }
+}
+.nc-workbench-businessdate{
+    position: relative;
+    .business-date-block{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 30px;
+    }
+    .ant-calendar-picker-icon{
+        left: 0;
+    }
+}
+.nc-workbench-businessdate.unbusinessdate {
+    position: relative;
+    .ant-calendar-picker {
+        .ant-calendar-picker-input {
+            color: #ff6100;
+        }
+    }
+    .business-date-flag {
+        position: absolute;
+        color: #ff6100;
+        top: 4px;
+        right: 0px;
+    }
+}

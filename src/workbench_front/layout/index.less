@@ -1,0 +1,238 @@
+.nc-workbench-layout {
+    .nc-workbench-top-container {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #eaeaea;
+        .iconfont {
+            font-size: 20px;
+            &:hover {
+                color: #e14c46;
+            }
+        }
+        .nc-workbench-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 48px;
+            span {
+                cursor: pointer;
+            }
+            .nav-left {
+                padding: 0 15px;
+                width: 310px;
+                .nc-workbench-hp {
+                    background-image: linear-gradient(
+                        -180deg,
+                        #b4bfc5 3%,
+                        #dbe1e4 98%
+                    );
+                    background: #bec1c8;
+                    border: 1px solid #fff;
+                    border-radius: 100px;
+                    color: #fff;
+                    overflow: hidden;
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    img {
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            .nav-right {
+                width: 360px;
+                padding: 0 15px;
+                .ant-select-auto-complete.ant-select .ant-input:focus,
+                .ant-select-auto-complete.ant-select .ant-input:hover {
+                    border-color: #888888;
+                    box-shadow: none;
+                }
+                .autocomplete {
+                    input {
+                        border-radius: 0;
+                        border-top: none;
+                        border-right: none;
+                        border-left: none;
+                    }
+                }
+            }
+            .nc-workbench-menu {
+                margin: 0;
+                height: 48px;
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                li {
+                    list-style-type: none;
+                    margin-right: 15px;
+                    a {
+                        text-decoration: none;
+                    }
+                    span {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .nccwb-header-info {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .ant-breadcrumb {
+                .iconfont {
+                    font-size: 16px;
+                }
+            }
+            .nccwb-header-info-right {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 0 20px;
+                .nc-workbench-businessdate {
+                    .ant-calendar-picker-input {
+                        width: 100px;
+                        padding: 4px 0 4px 20px;
+                        border: none;
+                        cursor: pointer;
+                        &:focus {
+                            box-shadow: none;
+                        }
+                    }
+                }
+                .iconfont {
+                    font-size: 17px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .nc-workbench-container {
+        flex: 1;
+        // margin-top: 40px;
+        .nc-workbench-iframe {
+            margin-top: 80px;
+            height: calc(100vh - 85px);
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .nc-workbench-drawer {
+        & > div {
+            height: calc(100% - 48px) !important;
+            top: 48px !important;
+        }
+        .drawer-content {
+            background-color: #fff;
+            display: flex !important;
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: center;
+            .drawer-exit {
+                width: 100%;
+                padding: 16px;
+                display: flex;
+                justify-content: flex-end;
+                cursor: pointer;
+            }
+            .drawer-info {
+                width: 100%;
+                padding: 13px 45px 0;
+                .info {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    width: 100%;
+                    padding-bottom: 24px;
+                    border-bottom: 1px solid rgba(13, 20, 36, 0.1);
+                }
+                .drawer-logo {
+                    border: 1px solid #b4bfc5;
+                    border-radius: 50%;
+                    height: 64px;
+                    width: 64px;
+                    overflow: hidden;
+                    img {
+                        width: 64px;
+                        height: 64px;
+                        border-radius: 50%;
+                    }
+                }
+                .name {
+                    margin-left: 14px;
+                    color: #474d54;
+                    font-size: 18px;
+                }
+            }
+            .drawer-setting {
+                width: 100%;
+                padding: 0 45px;
+                margin-top: 36px;
+                .setting-content {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 80px;
+                    width: 100%;
+                    padding: 0 20px;
+                    border: 1px solid rgba(13, 20, 36, 0.1);
+                    border-radius: 3px;
+                    .setting-btn {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        cursor: pointer;
+                        .iconfont {
+                            font-size: 12px;
+                        }
+                        span {
+                            font-size: 12px;
+                        }
+                        a {
+                            font-size: 12px;
+                            color: #474d54;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            .drawer-link {
+                margin-top: 20px;
+                padding: 40px 45px;
+                width: 100%;
+                .link {
+                    padding: 0 20px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    li {
+                        margin-bottom: 20px;
+                    }
+                    span {
+                        color: #474d54;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+.all-apps-popover {
+    .ant-popover-arrow {
+        border-top: 1px solid rgba(78, 89, 104, 0.19);
+        border-left: 1px solid rgba(78, 89, 104, 0.19);
+    }
+    .ant-popover-inner {
+        border: 1px solid rgba(78, 89, 104, 0.19);
+        box-shadow: 0px 3px 6px 0px rgba(74, 81, 93, 0.25);
+    }
+}

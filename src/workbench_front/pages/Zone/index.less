@@ -1,0 +1,180 @@
+body {
+    background-color: #f0f2f5;
+}
+.nc-workbench-zone {
+    .ant-layout {
+        background: #ffffff;
+    }
+    & > .ant-layout {
+        border: 1px solid #edecec;
+        border-radius: 4px;
+    }
+    .ant-layout-header {
+        height: 60px;
+        line-height: 60px;
+        padding: 0 20px;
+        background: #ffffff;
+        border-bottom: 1px solid #edecec;
+        /* display: flex;
+		justify-content: flex-end; */
+        align-items: center;
+    }
+    .ant-btn {
+        float: right;
+        margin: 10px 0;
+        z-index: 100;
+        &:hover {
+            color: #fff;
+            background: lightcoral;
+            cursor: pointer;
+        }
+    }
+    // 间隙
+    .gap {
+        background: #f0f2f5;
+        height: 20px;
+        margin: 0 -20px;
+    }
+    .ant-layout-sider {
+        border-right: 1px solid #edecec;
+    }
+
+    .from-card .ant-form-item {
+        display: flex;
+    }
+
+    .from-card .ant-form-item-control-wrapper {
+        flex: 1;
+    }
+    .margin-left-10 {
+        margin-left: 10px;
+    }
+    .ant-form-item-label {
+        min-width: 96px;
+    }
+    // 按钮
+    .btn_span {
+        cursor: pointer;
+        display: inline-block;
+        margin-right: 30px;
+    }
+    .step {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        & > div {
+            width: 33%;
+        }
+    }
+    .myHead {
+        display: flex;
+        width: 100%;
+        & > div {
+            width: 50%;
+        }
+    }
+
+    // .editable-cell-input-wrapper,
+    // .editable-cell-text-wrapper {
+    //     padding-right: 24px;
+    // }
+
+    .my-editable-cell-text-wrapper {
+        display: flex;
+        align-items: center;
+        .cell-show-value {
+            max-width: 78px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            display: inline-block;
+        }
+    }
+    .editable-cell-icon-check {
+        line-height: 28px;
+    }
+    .editable-add-btn {
+        margin-bottom: 8px;
+    }
+
+    .template-setting-steps {
+        margin-left: 20%;
+        margin-right: 20%;
+        height: 50px;
+        .ant-steps-item-process .ant-steps-item-title:after {
+            background-color: rgba(204, 204, 204, 1);
+        }
+    }
+    .ant-steps {
+        margin-top: 10px;
+    }
+    .required-tableCell {
+        .my-editable-cell-text-wrapper::before {
+            content: "*";
+            color: red;
+            margin-right: 5px;
+        }
+        .my-editable-cell-text-wrapper span {
+            width: 80%;
+            display: inline-block;
+        }
+        .editable-cell-input-wrapper {
+            width: 80%;
+        }
+    }
+    //table的css样式
+    .ant-table-wrapper {
+        .ant-table-tbody > tr,
+        .ant-table-thead > tr {
+            height: 40px;
+            span {
+                font-size: 13px;
+                color: #666;
+                font-family: 'PingFangHK-Regular';
+            }
+            th {
+                padding: 10px 8px;
+            }
+            th:nth-last-child(1){
+                padding: 10px 9px 10px 30px;
+            }
+            td {
+                padding: 0px;
+                box-sizing: border-box;
+                padding-top: 4px;
+                padding-left: 8px;
+            }
+            .editable-cell-input-wrapper,
+            .editable-cell-text-wrapper {
+                padding-right: 0;
+            }
+            .operationArea {
+                padding: 0 20px;
+                display: -webkit-flex; /* Safari */
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content:space-between;
+            }
+        }
+    }
+}
+.ant-modal-body {
+    .areaName-item {
+        .ant-input {
+            width: 80%;
+        }
+        margin-bottom: 20px;
+    }
+    .areaCode-item {
+        .ant-input {
+            width: 80%;
+        }
+        margin-bottom: 20px;
+    }
+}
+tr.drop-over-downward td {
+    border-bottom: 2px dashed #1890ff;
+}
+tr.drop-over-upward td {
+    border-top: 2px dashed #1890ff;
+}

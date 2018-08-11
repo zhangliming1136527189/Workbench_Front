@@ -1,0 +1,35 @@
+.nc-workbench-page .nc-workbench-menuregister {
+    height: 100%;
+    background: #ffffff;
+    border-radius: 3px;
+    .menuregister-list {
+        height: 100%;
+        .menugister-list-title {
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            color: #111;
+            font-size: 19px;
+        }
+        .menugister-list-table {
+            height: calc(100% - 60px);
+            overflow-x: hidden;
+            overflow-y: auto;
+            .menugister-list-action {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                span {
+                    margin-right: 15px;
+                    cursor: pointer;
+                    color: #007ace;
+                }
+            }
+            .ant-table td {
+                white-space: nowrap;
+            }
+        }
+    }
+}

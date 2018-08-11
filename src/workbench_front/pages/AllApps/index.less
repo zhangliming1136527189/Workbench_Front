@@ -1,0 +1,87 @@
+.all-apps-layout {
+	display: flex;
+	flex-flow: row;
+	width: calc(100vw - 400px);
+	height: calc(100vh - 150px);
+	.sider {
+		width: 300px;
+		overflow-y: auto;
+		margin: 10px 5px 15px;
+		padding: 10px 8px 0;
+		border: 1px solid #f1f1f1;
+		background: #fff;
+		.result-group-list {
+			border-bottom: 1px solid #e9e9e9;
+			.result-header {
+				padding-left: 5px;
+				background: rgba(244, 245, 247, 1);
+				.result-header-name {
+					cursor: pointer;
+				}
+			}
+			.result-app-list {
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				.app-col {
+					width: 50%;
+					.list-item {
+						padding-left: 5px;
+						margin-bottom: 8px;
+						.list-item-content {
+							cursor: pointer;
+							padding: 3px 4px;
+							border: 1px solid rgba(204, 204, 204, 1);
+							border-radius: 4px;
+							.title {
+								display: flex;
+								justify-content: space-between;
+							}
+							.img {
+								height: 120px;
+								background-size: contain;
+								border-top: solid 1px #ccc;
+							}
+						}
+						.list-item-content.active {
+							color: red;
+							border: 1px solid red;
+						}
+					}
+				}
+			}
+		}
+	}
+	.content {
+		overflow-y: auto;
+		border: 1px solid #f1f1f1;
+		margin: 10px 5px 15px;
+		padding: 0 8px 0;
+		flex: 1;
+		background: #fff;
+		.content-item {
+			margin-bottom: 15px;
+			.content-item-header {
+				margin-top: 10px;
+				border-bottom: 1px solid #d9d9d9;
+				height: 29px;
+			}
+			.content-item-content {
+				display: flex;
+				flex-wrap: wrap;
+				.item-app {
+					margin-top: 5px;
+					width: 25%;
+					a {
+						color: #333333;
+						font-size: 13px;
+					}
+					a:hover {
+						color: red;
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}

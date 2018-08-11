@@ -1,0 +1,71 @@
+.template-setting-complete-page {
+	margin-top: 90px;
+	.template-setting-steps {
+		margin-left: 20%;
+		margin-right: 20%;
+		height: 50px;
+		.ant-steps-item-process .ant-steps-item-title:after {
+			background-color: rgba(204, 204, 204, 1);
+		}
+	}
+	.template-setting-header {
+		height: 60px;
+		margin-left: 10%;
+		margin-right: 10%;
+		padding-left: 20px;
+		padding-right: 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background: #fff;
+		.header-name {
+			font-family: 'PingFangSC-Regular', 'PingFang SC';
+			font-weight: 400;
+			font-style: normal;
+			font-size: 16px;
+		}
+		button {
+			margin-right: 10px;
+		}
+	}
+	.template-setting-container {
+		display: flex;
+		flex-flow: row;
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 5px;
+
+		.template-setting-content {
+			width: 100%;
+			background-color: #fff; 
+			height: calc(100vh - 50px - 60px - 20px - 90px - 30px);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.content{
+				display:  flex;
+				.complete-icon{
+					font-size: 60px;
+					color: green;
+				}
+				.first-text{
+					margin-left:10px; 
+				}
+				a{
+					margin-left:15px; 
+				}
+			}
+		}
+	}
+}
+
+.add-not-meta-data {
+	.ant-modal-body {
+		display: flex;
+		align-items: center;
+		input {
+			width: 300px;
+		}
+	}
+}
+
